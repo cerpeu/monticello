@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.woff2') format('woff2'),
+  url('../fonts/Gotham-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.woff2') format('woff2'),
+  url('../fonts/Gotham-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamMedium.woff2') format('woff2'),
+  url('../fonts/GothamMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "slick";
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font: 300 18px/1 Gotham, sans-serif;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1170px;
+}
+
+
+.ba-menu{
+  display: flex;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 53px;
+
+
+  ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    padding-top: 5px;
+    padding-left: 87px;
+    .ba-li-last{
+      padding-left: 31px;
+    }
+  }
+
+
+  li{
+    padding-right: 67px;
+    :hover{
+      span{
+        background: #fff;
+      }
+    }
+
+    span{
+      display: inline-block;
+      border: #fff solid 1px;
+      padding: 4px;
+      border-radius: 50%;
+      margin-right: 14px;
+      
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  .soc-media{
+    margin-top: -10px;
+    padding-left: 18px;
+    :hover{
+      opacity: 0.4;
+    }
+  }
+
+  .soc-media a{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 39px;
+    height: 38px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 17px;
+
+  }
+}
+
+//header
+
+.ba-section{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+
+
+  h2{
+    margin: 0;
+    padding-top: 357px;
+    padding-left: 38px;
+    letter-spacing: 0.05em;
+    font: 700 80px/1 Gotham, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  p{
+    font-size: 18px;
+    padding-left: 30px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.slick-dots{
+  color: #000;
+  list-style-type: none;
+  position: absolute;
+  bottom: 239px;
+  right: 171px;
+
+  li{
+    padding-bottom: 40px;
+  }
+
+  button{
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    color: transparent;
+    padding: 0px;
+    margin: 0;
+    width: 9px;
+    height: 9px;
+
+  }
+  :hover
+  button{
+    background-color: #fff;
+  }
+
+  :active{
+    button{
+      background-color: #fff;
+    }
+
+  }
+}
+
+.slide-1{
+  display: flex;
+  background: #7A61F6 url("../img/tu-tram.jpg");
+  background-size:cover;
+  height: 800px;
+
+}
+
+.slide-2{
+  display: flex;
+  background: #7A61F6 url("../img/tu-tram.jpg");
+  background-size:cover;
+  height: 800px;
+
+}
+
+.slide-3{
+  display: flex;
+  background: #7A61F6 url("../img/tu-tram.jpg");
+  background-size:cover;
+  height: 800px;
+}
+
+.slide-4{
+  display: flex;
+  background: #7A61F6 url("../img/tu-tram.jpg");
+  background-size:cover;
+  height: 800px;
+}
+
+.slide-5{
+  display: flex;
+  background: #7A61F6 url("../img/tu-tram.jpg");
+  background-size:cover;
+  height: 800px;
+}
+
+.galka{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 90px;
+  left: 19px;
+  a{
+    border: 1px solid #fff;
+    padding: 8px 14px 11px 14px;
+    border-radius: 50%;
+  }
+}
+
+//слайдер
+
+.ba-houses{
+  background-color: #fff;
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  .ba-zaglavie{
+
+    padding-left: 424px;
+    h1{
+      font: 700 44px/1 Gotham, sans-serif;
+      text-transform: uppercase;
+      padding-top: 3px;
+    }
+    img{
+      padding-left: 110px;
+    }
+  }
+
+}
+
+.ba-houses__1{
+  display: flex;
+  position: relative;
+
+  .ba-aps{
+    position: absolute;
+    left: -216px;
+    top: 64px;
+    width: 585px;
+    height: 470px;
+    background-color: #55b7ff;
+  }
+  .ba-houses__img{
+    display: flex;
+    padding-top: 134px;
+    z-index: 1;
+    width: 1502px;
+    img{
+      width: 630px;
+      height: 470px;
+    }
+
+  }
+
+  .ba-houses__text1{
+    padding-left: 70px;
+  }
+
+}
+
+
